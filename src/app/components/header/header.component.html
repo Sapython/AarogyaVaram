@@ -1,0 +1,27 @@
+<header>
+  <img class="home-img" src="/assets/image 16.png" alt="" routerLink="">
+    <nav [ngStyle]="{ transform: sidebarOpen ? 'translateX(-100%)' : 'translateX(0%)'}">
+      <i (click)="sidebarOpen = !sidebarOpen" class="ri-close-fill toggle"></i>
+      <img src="assets/LOGO.png" alt="" />
+      <li routerLink="../home" routerLinkActive="active"><a>Home</a></li>
+      <li routerLink="../empaneleDoctors" routerLinkActive="active"><a>Our Doctors</a></li>
+      <ng-container *ngIf="width<=600">
+        <!-- <li routerLink="../gallery">Gallery</li>
+        <li routerLink="../blogs">Our Blogs </li> -->
+      </ng-container>
+      <li routerLink="../service" routerLinkActive="active"><a>Services</a></li>
+      <li routerLink="../aboutus" routerLinkActive="active"><a>About Us</a></li>
+      <li routerLink="../blogs" routerLinkActive="active"><a>Blogs</a></li>
+      <!-- <li routerLink="../retreat"><a >Retreat</a></li> -->
+    </nav>
+    <div (click)="sidebarOpen = !sidebarOpen" [ngStyle]="{ display: sidebarOpen ? 'block' : 'none' }" id="overlay">
+    </div>
+    <div class="actions">
+      <!-- <a href="tel:+919311626511"><button ><i class="ri-phone-fill"></i></button></a> -->
+      <button id="book-button" routerLink="../contactus">Book Appointment</button>
+      <!-- <img class="user" src="/assets/Ellipse 237.png" alt="" class="spanimg"> -->
+      <button id="menu" (click)="sidebarOpen = !sidebarOpen">
+        <i class="ri-menu-line"></i>
+      </button>
+    </div>
+</header>

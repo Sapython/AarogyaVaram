@@ -1,0 +1,54 @@
+aside{
+    position: relative;
+    a{
+        position: absolute;
+        top: 580px;
+        // left: 94%;
+        right: 5%;
+        img{
+            height: 60px;
+            width: 60px;
+            position: fixed;
+            z-index: 999;
+        }
+    }
+}
+@media(max-width:1200px) {
+    aside{
+        position: relative;
+        a{  
+            top: 510px;
+            right: 8%;
+        }
+    }
+}
+@media(max-width:768px) {
+    aside{
+        position: relative;
+        a{  
+            top: 450px;
+            right: 7%;
+            img{
+                height: 45px;
+                width: 45px;
+                position: fixed;
+                z-index: 999;
+            }
+        }
+    }
+}
+@media(max-width:416px) {
+    aside{
+        position: relative;
+        a{  
+            top: 200px;
+            right: 10%;
+            img{
+                height: 35px;
+                width: 35px;
+                position: fixed;
+                z-index: 999;
+            }
+        }
+    }
+}

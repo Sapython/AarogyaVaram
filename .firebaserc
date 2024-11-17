@@ -1,0 +1,21 @@
+{
+  "targets": {
+    "aarogyavaram-hs": {
+      "hosting": {
+        "AarogyaVaram": [
+          "aarogyavaram-hs"
+        ]
+      }
+    },
+    "reeva-bba60": {
+      "hosting": {
+        "AarogyaVaram": [
+          "reeva-bba60"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "aarogyavaram-hs"
+  }
+}

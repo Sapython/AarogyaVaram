@@ -1,0 +1,269 @@
+.HeadingText {
+    padding-bottom: 70px;
+    color: #030332;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 59px;
+
+    text-align: center;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+
+    .blueHeading {
+        font-size: 34px;
+
+        font-weight: 500;
+        font-style: normal;
+
+        color: #159EEC;
+        ;
+    }
+
+    .blackHeading {
+        font-weight: 500;
+        font-size: 28px;
+        color: #030332;
+
+    }
+
+    .blackHeading {
+        font-weight: 500;
+        font-size: 28px;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 44px;
+    grid-column-gap: 22px;
+    grid-template-columns: repeat(3, 1fr);
+
+    margin: 0px 32px 32px 32px;
+}
+
+.grid-item {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    flex: 1 0 auto;
+
+    .serviceName {
+        font-family: 'Roboto', 'sans serif';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 34px;
+
+        color: #1F2B6C;
+    }
+
+
+
+    .serviceDetail {
+
+        .serviceName:hover {
+            transform: scale(1.1);
+        }
+
+        .serviceDetail {
+
+            font-family: 'Roboto', 'sans serif';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 29px;
+            color: #212124;
+            padding-top: 16px;
+            padding-left: 20px;
+        }
+
+        .HeadingText {
+            .blackHeading {
+                font-size: 22px !important;
+                font-weight: 500px;
+            }
+
+            .blueHeading {
+                font-size: 22px !important;
+                font-weight: 500px;
+            }
+
+        }
+
+        .grid-item {
+            .serviceName {
+                font-size: 20px;
+            }
+
+            .serviceDetail {
+                font-size: 16px;
+            }
+        }
+
+
+        .serviceImg {
+
+            .serviceDetail:hover {
+                transform: scale(1.1);
+            }
+
+            .serviceImg {
+                width: 72px;
+            }
+
+            .serviceImg:hover {
+                transform: scale(1.1);
+            }
+            img{
+                min-width: 35px !important;
+            }
+        }
+    }
+}
+img{
+    min-width: 35px !important
+}
+
+@media (max-width: 1200px) {
+    .HeadingText {
+        .blackHeading {
+            font-weight: 500;
+            font-size: 22px;
+        }
+
+        .blueHeading {
+            font-size: 32px;
+            font-weight: 500;
+            font-style: normal;
+            color: #159EEC;
+        }
+    }
+}
+
+/* Screen larger than 700px? 3 columns */
+@media screen and (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+
+        .serviceName{
+            font-size: 20px;
+        }
+        .serviceDetail{
+            font-size: 15px;
+        }
+    }
+
+    .HeadingText {
+        .blackHeading {
+            font-size: 26px !important;
+        }
+
+        .blueHeading {
+            font-size: 28px !important;
+        }
+
+    }
+
+
+    .item1 {
+        order: 1
+    }
+
+    .item2 {
+        order: 2;
+    }
+
+    .item3 {
+        order: 3;
+    }
+
+    .item4 {
+        order: 4;
+    }
+
+    .item5 {
+        order: 5;
+    }
+
+    .item6 {
+        order: 6;
+    }
+
+    .item7 {
+        order: 7;
+    }
+
+    .item8 {
+        order: 8;
+    }
+
+    .item9 {
+        order: 9;
+    }
+
+    .item10 {
+        order: 10
+    }
+
+    .item11 {
+        order: 11
+    }
+
+}
+
+
+@media screen and (max-width: 550px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr) !important;
+        gap: 20px;
+    }
+
+    .HeadingText {
+        font-size: 14px !important;
+        ;
+    }
+
+    .grid-item {
+            display: flex;
+                flex-direction: row;
+                // justify-content: space-between;
+                align-items: center;
+                gap: 12px;
+        .serviceName {
+            font-size: 17px;
+        }
+
+        .serviceDetail {
+            font-size: 14px;
+        }
+    }
+    .HeadingText .blackHeading {
+        font-size: 15px !important;
+        line-height: 30px;
+        padding-inline: 20px;
+    }
+    .serviceImg{
+        img{
+            width: 40px;
+           
+        }
+    }
+    .HeadingText .blueHeading {
+        font-size: 27px !important;
+    }
+}

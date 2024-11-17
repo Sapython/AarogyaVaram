@@ -1,0 +1,108 @@
+.icons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    padding: 20px 30px;
+    text-align: center;
+}
+.s_services{
+text-align: center;
+color: rgba(3, 3, 50, 1);
+ letter-spacing: 5px;
+//  margin-top: 50px;
+}
+.s_services {
+    h1{
+        font-size: 32px;
+        color: #159EEC;
+        font-weight: 500;
+        margin-top: 90px;
+        text-transform: uppercase;
+
+    }
+    h2{
+        font-size: 1.6rem;
+        font-weight: 500;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+    }
+}
+
+.depart{
+    width: 100%;
+    // max-width: 320px;
+    margin: 10px 0px;
+    color: rgba(3, 22, 34, 1);
+}
+
+.depart p{
+    font-size: 16px;
+    font-weight: 410;
+}
+.d_img{
+    cursor: pointer;
+}
+.d_img:hover{
+    // background-color: ;
+    transform: scale(1.1);
+}
+
+@media (max-width: 1200px) {
+    .s_services h1 {
+        font-size: 2rem;
+        color: #159EEC;
+        font-weight: 500;
+        padding-top: 30px;
+    }
+    .s_services  h2{
+      font-size: 1.6rem;
+      font-weight: 500;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+  }
+}
+@media only screen and (max-width: 700px) {
+    .icons{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .s_services h1 {
+      font-size: 28px;
+      color: #159EEC;
+      font-weight: 500;
+      margin: 0px;
+      padding-top: 30px;
+  }
+  .s_services  h2{
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+  }
+
+  @media only screen and (max-width: 416px) {
+    .s_services h1 {
+        font-size: 20px;
+        color: #159EEC;
+        font-weight: 500;
+        letter-spacing: 3px;
+        margin-top: 0px;
+    }
+    .s_services  h2  {
+        font-size: 16px !important;
+        font-weight: 500;
+        padding-inline: 12px  !important;
+        letter-spacing: 1px  !important;
+        text-transform: uppercase;
+    }
+    .depart p {
+        font-size: 15px;
+        font-weight: 410;
+    }
+    .d_img {
+        transform: scale(1.1);
+        width: 20%;
+    }
+}

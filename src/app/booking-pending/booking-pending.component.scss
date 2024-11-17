@@ -1,0 +1,51 @@
+div{
+    text-align: center;
+    padding: 17% 10%;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+   
+    .header{
+        font-size: 32px;
+        color: rgba(253, 180, 22, 1);
+    }
+    p{
+        font-size: 20px;
+        line-height: 34px;
+        display: flex;
+        color: 
+        rgba(151, 151, 151, 1);
+    }
+button{
+   
+        height: 55px;
+        margin: 7px 0px;
+        font-size:  22px;
+        padding: 0px 60px;
+        border-radius: 14px;
+        border: 0px solid rgb(208, 208, 208);
+        background: linear-gradient(to bottom right, rgba(114, 237, 242, 1), rgba(81, 81, 229, 1));
+        box-shadow: 0px 5px 5px 0px rgb(76, 76, 229, 0.5);
+        color: white;
+    
+}
+}
+
+@media only screen and (max-width:600px) {
+
+    div{
+        padding: 25% 10%;
+    }
+    .header{
+        font-size:23px;
+    }
+p{
+    font-size: 17px;
+}
+img{
+    margin: 34px 30px;
+}
+button{
+    margin: 25px 0px;
+}
+}

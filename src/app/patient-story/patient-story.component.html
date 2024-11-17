@@ -1,0 +1,124 @@
+<app-header></app-header>
+<section data-aos="slide-up" class="storySummary">
+  <div class="content">
+    <!-- <h1>
+      Overcoming Cancer at <br /><span>Aarogyavaram</span> Critical Care <br />
+      Hospital
+    </h1> -->
+    <h1>
+      A Client's Story of Hope <br> and <span>Recovery</span> at Our Critical Care Hospital
+    </h1>
+    <p>
+      In the heart of our city, the Critical Care Hospital stands as a beacon of hope and transformation. Meet Sarah
+      Thompson, a vibrant young woman whose life took an unexpected turn when diagnosed with a rare heart condition.
+      Guided by our dedicated medical team, led by Dr. Emily Rodriguez, Sarah's journey from crisis to recovery
+      showcased the remarkable synergy of expertise and compassion.
+    </p>
+
+
+  </div>
+  <div style="text-align: right">
+    <img src="../../assets/story-1.png" id="patient" alt="Patient Image" />
+  </div>
+
+  <div class="btn-div">
+    <button class="btn" routerLink="/blogs">Read Full Story</button>
+  </div>
+
+
+
+</section>
+<section data-aos="slide-up" class="storySummary">
+
+  <div class="content" style="display: contents;">
+    <img src="../../assets/story-2.png" id="patient" alt="Patient Image" />
+    <p>
+      At the Critical Care Hospital, Sarah found more than just treatment – she discovered a network of unwavering
+      support. Our holistic approach embraced her family and friends, creating a united front in her healing process.
+      With cutting-edge treatments, personalized care plans, and a nurturing environment, Sarah's determination and
+      the hospital's commitment intertwined, resulting in a triumphant emergence from adversity. As Sarah walked out
+      of our doors, she carried not only restored health but also a newfound strength, a testament to the power of
+      human spirit and the cornerstone of care that defines the Critical Care Hospital – a place where healing and
+      hope converge to rewrite stories, one life at a time.
+    </p>
+  </div>
+
+</section>
+
+<div data-aos="fade-right" class="expert">
+  <p class="sky top">Our Expert Doctors</p>
+  <p class="blue">Experienced Medical Professionals Dedicated to Your Health</p>
+  <div>
+    <swiper [navigation]="true" [autoplay]="autoplayOptions" [loop]="true" autoplay-interval="5000" [slidesPerView]="2">
+      <ng-template swiperSlide>
+        <div data-aos="flip-down" data-aos="flip-down" class="symbol">
+          <div class="skyblue">
+            <img src="../../assets/Ellipse 209.png" alt="" />
+          </div>
+          <p class="name">Dr. Anurag Agarwal</p>
+          <p class="designation">Orthopedics</p>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div data-aos="flip-down" class="symbol">
+          <div class="yellowish">
+            <img src="../../assets/Ellipse 210.png" alt="" />
+          </div>
+          <p class="name">Dr. Anjana Purnima</p>
+          <p class="designation">Anaesthesia</p>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div data-aos="flip-down" class="symbol">
+          <div class="pink">
+            <img src="../../assets/Ellipse 211.png" alt="" />
+          </div>
+          <p class="name">Dr. Garima Trivedi</p>
+          <p class="designation">OBS& GYN</p>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div data-aos="flip-down" class="symbol">
+          <div class="skyblue">
+            <img src="../../assets/Ellipse 212.png" alt="" />
+          </div>
+          <p class="name">Dr. Harshit Trivedi</p>
+          <p class="designation">Pediatric</p>
+        </div>
+      </ng-template>
+    </swiper>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
+
+<div data-aos="slide-up" class="hospitalInfoCnt rev">
+  <div id="doctImg">
+    <img src="/assets/Group 1000002911.png" id="doct" alt="" />
+  </div>
+  <div class="content">
+    <p class="sky-col">Your health is our top priority.</p>
+    <p id="subText">
+      At our hospital, we believe that your health and well-being should always
+      come first. That's why we are committed to providing the highest quality
+      care, tailored to your individual needs and preferences.
+    </p>
+    <p id="subText">
+      Our team of skilled healthcare professionals is dedicated to helping you
+      achieve your health goals and maintaining your overall well-being.
+    </p>
+    <div class="feedback">
+      <div data-aos="zoom-in" class="positive">
+        <p>Positive Feedback</p>
+        <p id="percentage">85%</p>
+        <div class="rect blueFeedback"></div>
+      </div>
+      <div data-aos="zoom-in" class="negative">
+        <p>Experienced Doctors</p>
+        <p id="percentage">15+</p>
+        <div class="rect pinkFeedback"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

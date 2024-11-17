@@ -1,0 +1,47 @@
+<div class="header">
+    <div class="left">Get regular health check ups Quickly with the most trusted doctors in Prayagraj</div>
+    <div class="right"><img src="../../assets/healthCheck/Group.png"></div>
+</div>
+
+
+<div class="container">
+
+<div class="col_1">
+    <h1 class="text">Health Check ups</h1>
+    <div class="content">
+       <div class="card" *ngFor="let card of cards">
+        <img [src]="card.img">
+        <h2>{{card.h1}}<span>{{card.span}}</span></h2>
+         <p>Available on <span>{{card.p}}</span></p>
+         <div class="buttons">
+            <button class="btn btn_1">View Details</button>
+            <button class="btn">Opt In</button>
+         </div>
+    </div>
+
+    </div>
+</div>
+<div class="col_2">
+    <div class="card feature">
+        <h1 >Our Featured Checkup</h1>
+        <img src="../../assets/healthCheck/Group 1000003063.png">
+        <h2>Know how you should be getting a blood test done</h2>
+       
+        <div class="date"><p>Available on </p> <button>12may</button>
+            <button>12may</button>
+            <button>12may</button>
+        </div> 
+        <h3>560 people opted in</h3>
+        <ol>
+            <li>A blood test can help identify underlying medical conditions that may require treatment.</li>
+            <li> Blood tests can measure various components in your blood, such as red and white blood cells, platelets, and various chemicals and proteins.</li>
+            <li> They can detect signs of infection, inflammation, or hormonal imbalances.</li>
+        </ol>
+         <div class="buttons">
+            <button class="btn btn_1">View Details</button>
+            <button class="btn">Opt In</button>
+         </div>
+    </div>
+
+</div>
+</div>

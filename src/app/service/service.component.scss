@@ -1,0 +1,597 @@
+body {
+    // font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+}
+
+.bg-img {
+    // background-image: url("../../assets/Rectangle\ 5471.jpg");
+    // background-size: cover;
+
+    height: fit-content;
+    text-align: center;
+
+
+}
+
+.bg-img img {
+    width: 100%;
+    height: 400px;
+}
+
+.b {
+    border: 1px solid black;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+place-items: center;
+    padding-bottom: 30px;
+    margin-top: -140px;
+    gap: 50px;
+}
+
+.card {
+    width: 310px;
+    height: 389px;
+    margin: 10px 30px;
+    background-color: white;
+    border: 1px solid rgba(183, 228, 255, 1);
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+
+    div {
+        h1 {
+            font-size: 29px;
+            font-weight: 600;
+        }
+    }
+}
+
+.card img {
+    width: 90px;
+    height: 90px;
+    margin-top: -46px;
+}
+
+
+.cardinfo {
+    height: auto;
+    text-align: center;
+    padding: 24px 35px;
+    color:
+        rgba(31, 43, 108, 1);
+        p{
+            
+        }
+}
+
+.cardinfo p {
+    left: calc(50% - 376px/2 - 562px);
+    top: 771px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size:20px;
+    line-height: 30px;
+    text-align: center;
+    color: #1F2B6C;
+}
+
+.call {
+    width: 60px;
+    height: 60px;
+    top: 65%;
+    right: 10%;
+    position: fixed;
+}
+
+.service {
+    background-color: #E8F6FF;
+    height: auto;
+    text-align: center;
+    padding: 15px 30px;
+    font-size: 1rem;
+    color: rgba(40, 139, 179, 0.77);
+    padding-bottom: 60px;
+
+    h1 {
+        font-weight: 600;
+        text-transform: uppercase;
+        color: 
+        rgba(21, 158, 236, 1);
+        font-family: "Lato", sans-serif;
+        font-size: 29px;
+        padding: 30px 0px;
+        letter-spacing: 0.1em;
+    }
+}
+
+.services {
+    display: flex;
+    //    justify-content: center;
+    //    flex-wrap: wrap;
+    overflow-x: scroll;
+}
+
+.services::-webkit-scrollbar {
+    display: none;
+
+}
+
+
+.treatment {
+    margin: 0px 10px;
+    padding: 0px 30px;
+    width: 100%;
+    min-width: 275px;
+    //  max-width: 160px;
+    color: rgba(31, 43, 108, 1);
+
+    h3 {
+        font-size: 20px;
+        line-height: 34px;
+        text-align: center;
+        color: #1F2B6C;
+        margin: 0;
+        margin-top: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+    }
+
+    p {
+        margin: 0;
+        margin-top: 10px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        padding: 0 60px;
+        color: #212124
+    }
+}
+
+.treatment  {
+    img{  width: 80px;
+    height: 80px;
+    background-color: white;
+    cursor: pointer;
+    padding: 5px 5px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 10px;}
+   img:hover {
+        // background-color: ;
+        transform: scale(1.0);
+    }
+}
+
+
+.d_img {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    cursor: pointer;
+    padding: 5px 5px;
+    background: #FFFFFF;
+    // border: 1px solid #EEEEEE;
+    // box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+}
+
+.treatment img:hover {
+    background: linear-gradient(135deg, #72EDF2 0%, #5151E5 100%);
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+}
+
+.img1:hover {
+    content: url('../../assets/hospital services page/Group\ 1000003111.png');
+}
+
+.img2:hover {
+    content: url('../../assets/hospital services page/Group.png');
+}
+
+.img3:hover {
+    content: url('../../assets/hospital services page/Mask\ group-3.png');
+}
+
+.img4:hover {
+    content: url('../../assets/hospital services page/Group\ 1000003107.png');
+}
+
+.img5:hover {
+    content: url('../../assets/hospital services page/Mask\ group-1.png');
+}
+
+.para {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    gap: 10px;
+    justify-content: center;
+    color: rgb(31, 43, 108);
+    margin: 0 55px;
+}
+
+.text {
+    width: 100%;
+    font-size: 18px;
+    max-width: 500px;
+
+    p {
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .span {
+        font-weight: 700;
+        font-size: 20px;
+        color: rgba(31, 43, 108, 1);
+
+    }
+    .head {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
+
+.image2-bg {
+    position: absolute;
+    width: 350px;
+    height: 400px;
+    opacity: 0.7;
+    right: 0px;
+    transform: scaleX(-1);
+
+}
+.image1-bg {
+    position: absolute;
+    width: 350px;
+    height: 400px;
+    opacity: 0.7;
+    left: 0px;
+  
+
+}
+
+
+.image img {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+
+
+    // border-radius: 15px ;
+    // box-shadow: 2px 2px 5px 2px rgb(199, 199, 204);
+}
+
+.heart {
+    background-image: url("../../assets/Group 1000002858.png");
+
+    max-height: 100px;
+
+    background-size: cover;
+    background-position-x: center;
+    min-height: 50px;
+    padding: 40px 10px;
+
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.s_services {
+    text-align: center;
+    color: rgba(3, 3, 50, 1);
+    letter-spacing: 5px;
+    padding-top: 30px;
+}
+
+.s_services h1 {
+
+    color: rgba(13, 121, 187, 1);
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.s_services h2 {
+    color: rgba(3, 3, 50, 1);
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.depart {
+    width: 100%;
+    // max-width: 320px;
+    margin: 10px 0px;
+    color: rgba(3, 22, 34, 1);
+}
+
+.svg {
+    width: 80px;
+    position: relative;
+    margin-top: 10px;
+
+}
+
+.center {
+    text-align: right;
+}
+
+.depart p {
+    font-size: 20px;
+    font-weight: 410;
+}
+
+.d_img {
+    cursor: pointer;
+}
+
+.d_img:hover {
+    // background-color: ;
+    transform: scale(1.1);
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .content {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+        margin-top: -140px;
+        gap: 0px;
+    }
+
+    .text {
+        .head {
+            font-size: 24px;
+            line-height: 33px;
+        }
+
+        p {
+            font-family: "Roboto", sans-serif;
+            font-size: 17px;
+            line-height: 33px;
+        }
+    }
+
+    .image img {
+        width: 100%;
+        height: 359px;
+        margin: 0px;
+    }
+
+}
+@media only screen and (max-width: 1000px) {
+    .text p {
+        font-size: 14px;
+        line-height: 29px;
+        margin: 5px 0px;
+    }
+
+    .cardinfo {
+        padding: 0px 5px;
+        color: rgb(31, 43, 108);
+
+   
+    }
+
+    .card div h1 {
+        font-size: 20px;
+    }
+
+    .bg-img img {
+        width: 100%;
+        height: 310px;
+    }
+
+    .treatment h3 {
+        font-size: 17px;
+    }
+
+    .treatment p {
+        padding: 0 60px;
+        font-size: 12px;
+    }
+
+    .para {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+        gap: 18px;
+        justify-content: center;
+        color: rgb(31, 43, 108);
+        margin: 0 15px;
+    }
+
+    .image img {
+        width: 100%;
+        height: 295px;
+        margin: 0px;
+    }
+
+    .text .head {
+        font-size: 22px;
+        line-height: 33px;
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 942px) {
+    .cardinfo {
+        padding: 10px 7px;
+    }
+    .card{
+        height: 357px;
+    }
+    .cardinfo p{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .text p {
+        font-size: 14px;
+        line-height: 21px;
+        margin: 5px 0px;
+    }
+
+    .cardinfo {
+        padding: 0px 5px;
+        color: rgb(31, 43, 108);
+
+   
+    }
+
+    .card div h1 {
+        font-size: 20px;
+    }
+
+    .bg-img img {
+        width: 100%;
+        height: 310px;
+    }
+
+    .treatment h3 {
+        font-size: 17px;
+    }
+
+    .treatment p {
+        padding: 0 60px;
+        font-size: 12px;
+    }
+
+    .para {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+        gap: 18px;
+        justify-content: center;
+        color: rgb(31, 43, 108);
+        margin: 0 15px;
+    }
+
+    .image img {
+        width: 100%;
+        height: 265px;
+        margin: 0px;
+    }
+
+    .text .head {
+        font-size: 22px;
+        line-height: 33px;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .content {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    place-items: center;
+    }
+    .cardinfo {
+        padding: 20px 22px;
+    }
+    .cardinfo p{
+        font-size: 22px;
+    }
+    .card div h1{
+        font-size: 27px;
+    }
+}
+@media (max-width: 600px) {
+    
+
+    .service h1 {
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #159EEC;
+        font-family: "Lato", sans-serif;
+        font-size: 18px;
+    }
+
+    .paraimg {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #rev-para{
+        display: block;
+    }
+    image img {
+        width: 90% !important;
+        height: 265px !important;
+        margin: 32px 0px !important;
+    }
+    .center {
+     text-align:justify;
+
+    }
+    .heart {
+
+        max-height: 64px;
+        min-height: 0px;
+        padding: 40px 10px;
+    }
+    .text p {
+        font-size: 14px;
+        line-height: 21px;
+        margin: 5px 35px 0px 0px;
+    }
+
+    .icons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        padding: 20px 30px;
+        text-align: center;
+    }
+
+    .s_services h1 {
+        color: rgb(13, 121, 187);
+        font-size: 26px;
+    }
+
+    .s_services h2 {
+        color: rgb(3, 3, 50);
+        font-size: 17px;
+    }
+
+
+    .bg-img img {
+        width: 100%;
+        height: 250px;
+    }
+    .d_img  {
+        width: 40px;
+        height: 40px;
+    }
+    .image img {
+        width: 100%;
+        height: 345px;
+    }
+    .depart p {
+        font-size: 12px !important;
+        padding-inline: 23px;
+    }
+    .treatment {
+        margin: 0px 10px;
+         padding: 0px 0px;
+        width: 76%;
+         min-width: 185px;
+        color: rgb(31, 43, 108);
+    }
+
+}

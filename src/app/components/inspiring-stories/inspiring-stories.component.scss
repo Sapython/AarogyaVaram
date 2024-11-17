@@ -1,0 +1,196 @@
+.stories {
+    background-image: url('/assets/Group 1000003113.png');
+
+    .symbol {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #Eclippse {
+        display: -webkit-box;
+        margin-left: auto;
+        max-width: 146px;
+    }
+
+    #quotes {
+        padding-bottom: 20px;
+        max-height: 64px;
+    }
+
+    #person {
+        max-width: 156px;
+    }
+
+    #Name {
+        font-family: 'Roboto',
+            'sans serif';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 39px;
+        align-items: center;
+        text-align: center;
+
+        color: #03194D;
+    }
+
+    .round {
+        background: #030332;
+        border-radius: 50px;
+        width: 63px;
+        height: 63px;
+        flex-shrink: 0;
+    }
+
+    #text {
+        font-family: 'Roboto',
+            'sans serif';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 29px;
+        align-items: center;
+        text-align: center;
+        color: #03194D;
+        padding-bottom: 40px;
+    }
+
+    #hospitalBed {
+        padding-top: 16px;
+        max-height: 158px;
+    }
+}
+
+.top {
+    padding-top: 40px;
+    margin-top: 20px;
+}
+
+.Name {
+    font-family: 'Roboto',
+        'sans serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 39px;
+    align-items: center;
+    text-align: center;
+
+    color: #03194D;
+}
+
+.sky {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #159EEC;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+
+.blue {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #030332;
+}
+
+#mobView {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-size: 14px !important;
+    width: 170px !important;
+    height: 40px !important;
+    border: none;
+    color: #EEEEEE;
+    background: linear-gradient(135deg, #72EDF2 0%, #5151E5 100%);
+    border-radius: 24px;
+    box-shadow: 0px 7px 12px rgba(16, 39, 203, 0.3);
+}
+
+@media screen and (max-width: 1200px) {
+    button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .stories {
+        background-image: url('/assets/plus.png');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-color: #fff;
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            display: none;
+        }
+
+        .swiper-pagination {
+            font-size: 16px;
+        }
+
+        #text {
+            font-size: 20px;
+
+            padding-bottom: 40px;
+            margin: 0 60px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .sky,
+    .blue {
+        font-size: 22px;
+    }
+
+    .stories {
+        #text {
+            font-size: 14px;
+        }
+    }
+
+    #mobView {
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        font-size: 14px !important;
+        width: 170px !important;
+        height: 40px !important;
+        border: none;
+        color: #EEEEEE;
+        background: linear-gradient(135deg, #72EDF2 0%, #5151E5 100%);
+        border-radius: 24px;
+    }
+}
+
+@media (max-width: 415px) {
+    .stories #person {
+        max-width: 100px;
+    }
+
+    .Name {
+        font-size: 22px;
+    }
+
+    .blue {
+        font-size: 15px;
+        padding-inline: 15px;
+    }
+}

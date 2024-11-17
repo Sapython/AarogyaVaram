@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+body, html{
+  overflow-x: hidden;
+}
+*{
+  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  }
+  .blogPostSwiper{
+    padding: 40px;
+  }
+
+@media screen and (max-width: 768px) {
+  .blogPostSwiper{
+    padding: 20px;
+  }
+}
+// for mobile
+@media screen and (max-width: 480px) {
+  .blogPostSwiper{
+    padding: 10px;
+  }
+}
+.infoColor{
+  color:#159EEC;
+}

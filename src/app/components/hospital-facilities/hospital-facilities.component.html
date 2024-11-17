@@ -1,0 +1,27 @@
+<div>
+    <p id="related" data-aos="fade-left">Hospital Facilities: <br>
+        <span>Exceptional Infrastructure for Patient Care</span>
+    </p>
+</div>
+<section class="featureRight">
+    <div class="detail" data-aos="fade-right" data-aos-offset="300">
+        <div class="feature1" [ngClass]="facility.title ==  currentFacility.title ? 'activeFeature' : '' "
+            *ngFor=" let facility of hospitalFacilities " (click)="currentFacility=facility"> <img
+                [src]="facility.image" alt="" data-aos-easing="ease-in-sine">
+            <div class="sub-sec">
+                <p class="hd">{{facility.title}}</p>
+                <p class="desc">{{facility.description}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="cont-2" data-aos="fade-up">
+        <img class="main" [src]="currentFacility.featuredImage" alt="People Doing Ganj" />
+        <div class="sub-cont-2">
+            <div class="sub-img-txt feature" *ngFor="let feature of currentFacility.facilities">
+                <img [src]="feature.img" alt="">
+                <p>{{feature.text}}</p>
+            </div>
+
+        </div>
+    </div>
+</section>

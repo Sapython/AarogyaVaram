@@ -1,0 +1,39 @@
+div{
+    text-align: center;
+    padding: 17% 10%;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+   
+    .header{
+        font-size: 32px;
+        font-weight: 600;
+        color: rgba(253, 180, 22, 1);
+    }
+    p{
+        font-size: 20px;
+        margin-top: 51px;
+        line-height: 34px;
+        display: flex;
+        color: 
+        rgba(151, 151, 151, 1);
+    }
+button{
+   
+        height: 55px;
+        margin: 7px 0px;
+        font-size:  22px;
+        padding: 0px 100px;
+        border-radius: 14px;
+        border: 0px solid rgb(208, 208, 208);
+        background: linear-gradient(to bottom right, rgba(114, 237, 242, 1), rgba(81, 81, 229, 1));
+        box-shadow: 0px 5px 5px 0px rgb(76, 76, 229, 0.5);
+        color: white;
+    
+}
+a{
+    color: rgba(44, 44, 44, 1);
+    padding: 18px 58px;
+    font-size: 23px;
+}
+}

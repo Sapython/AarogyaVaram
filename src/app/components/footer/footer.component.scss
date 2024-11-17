@@ -1,0 +1,274 @@
+footer {
+    font-family: 'Lato','sans serif';
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(88.07deg, #0D79BB 28.41%, #4362A9 77.11%);
+    margin-top: 50px;
+    .container{
+      display: flex;
+      background-image:
+          url('../../../assets/Injection.svg');
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: 100%;
+
+      padding: 92px 140px;
+      gap: 50px;
+      .depts{
+        grid-area: depts;
+      }
+      .links{
+        grid-area: links;
+      }
+      .aboutShreeva{
+        max-width:350px;
+      }
+      .socials{
+        max-width: 200px;
+      }
+            font-family: 'Lato', 'sans serif',
+            sans-serif;
+              color: #FFFFFF;
+              .heading{
+                text-transform: uppercase;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 29px;
+                }
+                .aboutShreeva, 
+                .depts, 
+                .links,
+                .contactUs{
+                    display: flex;
+                    flex-direction: column;
+                    gap:20px;
+
+                    .link-text:hover{
+                      cursor: pointer;
+                      color: bisque;
+                      transition: .3s ;
+                    }
+                  
+                }
+                .links{
+                  width: 15%;
+                }
+                
+              .aboutShreeva{
+                grid-area: about;
+                .logo{
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+      
+                  width: 288px;
+                  background-color: #FFFFFF;
+                  border-radius: 20px;
+                }
+                p{
+                   font-family: 'Roboto', sans-serif;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 26px;
+                    max-width: 350px;
+                }
+              }
+              .subs{
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 22px;
+      
+                 margin: 0px;
+                 a{
+                   text-decoration: none;
+                   color: #FFFFFF;
+                   white-space: nowrap;
+                 }
+              }
+              .contactUs{
+                grid-area: contactUs;
+                .contactInfo{
+                  display: flex;
+                  flex-direction: row;
+                  gap: 4px
+                }
+                #directions{
+                  text-transform: uppercase;
+                  text-decoration: underline;
+                  color: #FFFFFF;
+                  margin-top: 20px;
+                  font-weight: 700;
+                  font-size: 24px;
+                  line-height: 20px;
+
+                  text-decoration: none;
+                }
+              }
+              .socials{
+                grid-area: socials;
+
+                display: flex;
+                flex-direction: row;
+                gap: 12px;
+
+                img{
+                  max-width:54px;
+                }
+              }
+              .mobView{
+                display: none;
+              }
+    }
+      @media screen and (max-width: 1400px) {
+              footer{
+                width:100%;
+              }
+              .container{
+                padding: 92px;
+                gap: 30px;
+                p, .subs{
+                  font-size: 16px ;
+                }
+                .heading{
+                  font-size: 16px;
+                }
+                #directions{
+                  a{
+                    font-size: 16px;
+                  }
+                }
+              }
+      }
+      @media screen and (max-width: 1200px) {
+        .socials {
+          flex-direction: column !important;
+          img {
+              width: 40px;
+            }
+        }
+        .container {
+          padding: 50px 70px;
+          gap: 20px;
+        }
+        .aboutShreeva {
+          min-width: 200px;
+
+          .logo {
+            width: 200px !important;
+          }
+        }
+      }
+      @media screen and (max-width: 835px) {
+        .aboutText {
+            grid-area: aboutText;
+          }
+        .webView{
+          display: none;
+        }
+        .container{
+          padding: 5%;
+          background-image: none;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-areas: 
+          "socials about"
+          "aboutText aboutText"
+          "depts links"
+          "contactUs contactUs"
+          ;
+          .socials{
+            flex-direction: row !important;
+            align-items: center;
+          }
+          .poweredBy{
+            display: none;
+          }
+          .heading,
+          #directions{
+            font-size: 24px ;
+          }
+          .subs{
+            font-size: 20px;
+          }
+          .mobView{
+            display: flex;
+          }
+          .contactUs{
+            .heading{
+              padding-top: 20px;;
+              
+            }
+          }
+        }
+      }
+      @media screen and (max-width: 515px) {
+        .container{
+          grid-gap: 5px;
+        }
+        .socials{
+          img{
+            width:30px;
+          }
+        }
+        .aboutShreeva{
+          .logo{
+            width: 150px !important;
+          }
+        }
+        .aboutText{
+          font-size: 12px;
+        }
+      }
+      @media screen and (max-width: 400px) {
+        .links{
+          float: right;
+          margin: 0px 50px;
+        }
+        .container{
+          grid-gap: 4px !important;
+        }
+        .heading{
+          font-size: 15px !important;
+        }
+        .subs, 
+        .aboutText,
+        #direcions, 
+        .contactInfo{
+          font-size: 13px !important;
+          width: 100%;
+        }
+        .contactInfo{
+          img{
+            width: 20px;
+          }
+          p{
+            font-size: 12px;;
+          }
+        }
+        .mobView{
+          p{ font-size: 13px !important;}
+        }
+        .aboutText{
+          padding-top: 12px;
+        }
+        .socials{
+          gap: 4px;
+          img{
+            width: 20px !important;
+          }
+        }
+        .aboutShreeva{
+          .logo{
+            width:120px !important;
+          }
+        }
+        footer .container p, footer .container .subs {
+          font-size: 16px;
+          font-weight: 300;
+       }
+
+      }
+}
+
